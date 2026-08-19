@@ -22,6 +22,7 @@ You can list the available drivers by running `dbc search`:
 ```console
 $ dbc search
 bigquery             An ADBC driver for Google BigQuery developed by the ADBC Driver Foundry
+chdb                 An embedded ADBC driver powered by ClickHouse
 clickhouse           An ADBC driver for ClickHouse developed by ClickHouse, Inc.
 databricks           An ADBC Driver for Databricks developed by the ADBC Driver Foundry
 datafusion           An ADBC driver for Apache DataFusion developed by the ADBC Driver Foundry
@@ -95,6 +96,12 @@ $ dbc search --verbose
     ├── 1.11.2
     ├── 1.12.0
     ╰── 1.12.1
+• chdb
+   Title: chDB Driver
+   Description: An embedded ADBC driver powered by ClickHouse
+   License: Apache-2.0
+   Available Versions:
+    ╰── 26.7.0
 • clickhouse
    Title: ClickHouse Driver
    Description: An ADBC driver for ClickHouse developed by ClickHouse, Inc.
@@ -168,7 +175,8 @@ $ dbc search --verbose
     ├── 1.4.0
     ├── 1.4.1
     ├── 1.5.0
-    ╰── 1.6.0
+    ├── 1.6.0
+    ╰── 1.6.1
 • mysql
    Title: ADBC Driver Foundry Driver for MySQL
    Description: An ADBC Driver for MySQL developed by the ADBC Driver Foundry
@@ -179,7 +187,8 @@ $ dbc search --verbose
     ├── 0.3.0
     ├── 0.3.1
     ├── 0.4.0
-    ╰── 0.5.0
+    ├── 0.5.0
+    ╰── 0.6.0
 • postgresql
    Title: ASF PostgreSQL Driver
    Description: An ADBC driver for PostgreSQL developed under the Apache Software Foundation
@@ -200,7 +209,8 @@ $ dbc search --verbose
     ├── 1.2.1
     ├── 1.3.0
     ├── 1.4.0
-    ╰── 1.5.0
+    ├── 1.5.0
+    ╰── 1.6.0
 • snowflake
    Title: ASF Snowflake Driver
    Description: An ADBC driver for Snowflake developed under the Apache Software Foundation
@@ -212,13 +222,15 @@ $ dbc search --verbose
     ├── 1.10.1
     ├── 1.10.3
     ├── 1.11.0
-    ╰── 1.12.0
+    ├── 1.12.0
+    ╰── 1.13.0
 • spark
    Title: ADBC Driver Foundry Driver for Apache Spark
    Description: An ADBC driver for Apache Spark developed by the ADBC Driver Foundry
    License: Apache-2.0
    Available Versions:
-    ╰── 0.1.0
+    ├── 0.1.0
+    ╰── 0.2.0
 • sqlite
    Title: ASF SQLite Driver
    Description: An ADBC driver for SQLite developed under the Apache Software Foundation
@@ -241,7 +253,8 @@ $ dbc search --verbose
     ├── 0.3.1
     ├── 0.4.0
     ├── 0.5.0
-    ╰── 0.5.1
+    ├── 0.5.1
+    ╰── 0.5.2
 • oracle [private]
    Title: Columnar ADBC Driver for Oracle Database
    Description: An ADBC driver for Oracle Database developed by Columnar
@@ -297,7 +310,8 @@ $ dbc search --pre --verbose mysql
     ├── 0.3.0
     ├── 0.3.1
     ├── 0.4.0
-    ╰── 0.5.0
+    ├── 0.5.0
+    ╰── 0.6.0
 ```
 <!-- /dbc-output -->
 
